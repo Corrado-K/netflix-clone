@@ -1,4 +1,4 @@
-import { data } from 'autoprefixer';
+
 import { useEffect, useState } from 'react';
 import '../index.css';
 
@@ -19,9 +19,10 @@ const Row = (props) => {
         const movies =  moviesData;
         if (movies && movies.length !== 0){
             setMovies(() => movies)
+            
         }
     }
-
+    console.log(movies);
     const mov = moviesData[0]['movies'];
 
     // console.log(moviesData[0]['movies']);
